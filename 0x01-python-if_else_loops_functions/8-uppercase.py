@@ -3,6 +3,6 @@ def uppercase(str):
     for c in range(len(str)):
         d = ord(str[c])
         if (d >= 65) and (d <= 90):
-            print("{}".format(chr(d)), end = "")
+            print("{}".format(chr(d)), end="")
         else:
             print()
