@@ -7,17 +7,16 @@
  * @head: head of singly linked list
  * @number: value in singly linked list
  *
- * Return: the address of the new node, or NULL if it failed 
+ * Return: the address of the new node, or NULL if it failed
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *new_node, *temp1 = *head. *temp2;
-	
+	listint_t *new_node, *temp1 = *head, *temp2;
 
 	if (head == NULL)
 
 		return (NULL);
-	new_node = malloc(sizeof(lisint_t));
+	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
 
@@ -34,4 +33,4 @@ listint_t *insert_node(listint_t **head, int number)
 
 		temp1->next = new_node, new_node->next = temp2;
 		return (new_node);
-
+}
