@@ -2,7 +2,7 @@
 import hidden_4
 import sys
 if __name__ == "__main__":
-      names = dir(hidden_4)
-     for y in names:
+    names = dir(hidden_4)
+    for y in names:
 	if y[:2] != "_":
-             print("{:s}".format(y))
+	    print("{:s}".format(y))
