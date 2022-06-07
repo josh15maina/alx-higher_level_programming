@@ -1,6 +1,6 @@
 # 0x03. Python - Data Structures: Lists, Tuples
 
-## Description
+### Description
 What you should learn from this project:
 * Why Python programming is awesome
 * What are lists and how to use them
