@@ -5,9 +5,9 @@ if __name__ == "__main__":
     if argc == 0:
         print("{:d} arguments.".format(argc))
     elif argc == 1:
-        print("{:d} argument.".format(argc))
+        print("{:d} argument:".format(argc))
     else:
         print("{:d} arguments:".format(argc))
-    for g in range(0, len(argv)):
-        if g > 0:
-            print("{:d}: {:s}".format(g, argv[g]))
+    for i in range(0, len(argv)):
+        if z > 0:
+            print("{:d}: {:s}".format(z, argv[z]))
