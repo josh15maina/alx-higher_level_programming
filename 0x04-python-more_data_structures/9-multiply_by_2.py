@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    new_dict = a_dictionary.update({n: 2 * a_dictionary[n] for n in a_dictionary.items()})
+    new_dict = {j: 2 * a_dictionary[j] for j in a_dictionary} 
     return (new_dict)
