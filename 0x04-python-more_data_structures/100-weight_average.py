@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    weighted_sum = []
-    for a, b in zip(score, weight):
-        weighted_sum.append(score * weight)
-
-    return round(sum(weighted_sum) / sum(weight))
+    if not my_list:
+        return (0)
+    h = sum(x[0] * x[1] for x in my_list)
+    k = sum(z[1] for z in my_list)
+    return (h / k)
