@@ -2,11 +2,9 @@
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
-    rom_num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-    dec = 0
-    s = s.replace("IV", "IIII").replace("IX", "VIIII")
-    s = s.replace("XL", "XXXX").replace("XC", "LXXXX")
-    s = s.replace("CD", "CCCC").replace("CM", "DCCCC")
-    for char in s:
-        dec += rom_num[char]
-        return dec
+     Rm = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+     rm = roman_string
+     i_list = [Rm[i[0]] if Rm[i[0]] >= Rm[i[1]] else (-1*Rm[i[0]])
+             for i in zip(rm, rm[1:] + rm[-1])]
+     dec = sum(i_list)
+     return (dec)
